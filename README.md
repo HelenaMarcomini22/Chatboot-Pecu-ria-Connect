@@ -1,71 +1,70 @@
-🤖 Agente Pecuário: Insights do Agronegócio com Gemini 2.0 Flash 📈
+<h1 align="center"> 🐂 Chatbot Pecuário com GeminAI</h1>
+<p align="center"><strong>Automação inteligente para o agronegócio brasileiro<strong></p>
+<p align="center">
+<img src=".\assents\Bunner.png" alt="Banner do projeto" width="100%"></p>
 
-🌟 Visão Geral do Projeto
-Este projeto demonstra uma poderosa aplicação da inteligência artificial para o setor pecuário, utilizando o modelo Gemini 2.0 Flash e a Google Agent Development Kit (ADK). Desenvolvemos uma suíte de agentes especializados que, trabalhando em conjunto, fornecem insights valiosos e automatizam tarefas rotineiras, desde a busca de preços de mercado até a geração de conteúdo estratégico para redes sociais.
+🔍 Funcionalidades
 
-Com o "Agente Pecuário", é possível obter:
+✅ Busca de preços da arroba do boi com fonte e data  
+📰 Resumo inteligente de notícias do setor  
+🧠 Planejamento estratégico de conteúdo para redes sociais  
+📣 Criação de posts engajadores para LinkedIn  
+🌾 Foco 100% no cenário do agronegócio brasileiro
 
-Preços atualizados da arroba do boi.
-Resumos concisos de notícias do setor.
-Planos estratégicos para posts em redes sociais.
-Posts otimizados para o LinkedIn, prontos para engajar o público.
 
-🚀 Como Funciona
+🧪 Tecnologias Utilizadas
 
-O coração deste projeto é a orquestração de agentes de IA especializados, cada um com uma função específica, que se comunicam e colaboram para entregar resultados completos. Veja o fluxo principal:
+-------------------------------------------------------------------
+| Ferramenta     | Finalidade                                     |
+|----------------|------------------------------------------------|
+| Google ADK     | Gerenciamento de agentes inteligentes          |
+| Gemini Flash   | Geração de conteúdo e análise contextual       |
+| Python         | Lógica e estrutura geral do projeto            |
+| IPython        | Visualização e testes em ambiente Colab        |
+-------------------------------------------------------------------
 
-BuscadorDePrecos: Este agente utiliza a ferramenta Google Search para obter o preço mais recente da arroba do boi e outras commodities, fornecendo data e fonte da cotação.
-ResumidorDeNoticias: Recebe uma lista de notícias do setor e gera resumos objetivos, destacando os pontos mais relevantes para o público pecuarista.
-PlanejadorDeConteudo: Com base em tópicos e notícias resumidas, este agente usa o Google Search para criar um plano estratégico de conteúdo para o LinkedIn, identificando os pontos mais engajadores e o tema de maior potencial.
-CuradorDeConteudoLinkedIn: Utilizando o plano gerado e, opcionalmente, um resumo de notícia, este agente redige um post profissional e engajador para o LinkedIn, incluindo hashtags relevantes.
+📁 Estrutura do Projeto
 
-🛠️ Tecnologias Utilizadas
+chatbot-pecuaria/ 
+├── agents/ 
+│ ├── buscador_preco.py 
+│ ├── planejador_post.py 
+│ ├── resumidor_noticias.py 
+│ └── curador_linkedin.py 
+├── utils/ 
+│ ├── call_agent.py 
+│ └── format_markdown.py 
+├── main.py 
+├── requirements.txt 
+├── README.md 
+└── assets/ 
+└── banner.png 
+└── demo.gif
 
-Google Gemini 2.0 Flash: Modelo de linguagem grande e performático, ideal para tarefas de geração de texto e análise.
-Google Agent Development Kit (ADK): Framework para construir e orquestrar agentes de IA.
-Google Search Tool: Ferramenta integrada aos agentes para realizar buscas em tempo real e obter informações atualizadas.
-IPython Display: Utilizado para renderizar a saída dos agentes de forma clara e formatada (Markdown, HTML).
-Google Colab: Ambiente de desenvolvimento para execução e demonstração do código.
+🚀 Como Executar
 
-🎯 Por que isso é Importante?
+bash
+=> Clone o repositório
+git clone https://github.com/HelenaMarcomini22/chatbot-pecuaria.git
+cd chatbot-pecuaria
 
-No dinâmico mercado do agronegócio, ter acesso rápido a informações precisas e ser capaz de comunicar estrategicamente é crucial. Este projeto automatiza a coleta de dados de mercado, a análise de notícias e a criação de conteúdo, liberando tempo valioso para produtores, analistas e profissionais do setor se concentrarem em decisões estratégicas. É a inteligência artificial trabalhando a favor da eficiência e da competitividade no agronegócio brasileiro.
+=> Instale as dependências
+pip install -r requirements.txt
 
-💡 Como Executar o Projeto
+=> Configure sua chave da API Gemini
+export GOOGLE_API_KEY="sua-chave-aqui"
 
-1. Configuração da API Key:
+=> Execute o projeto
+python main.py
 
-Certifique-se de ter uma GOOGLE_API_KEY configurada nas suas variáveis de ambiente ou no Google Colab (via userdata.get('GOOGLE_API_KEY')).
+<h3 align="center" style="color:#30b36c;">💡 Destaque</h3> <p align="center"><strong>Este chatbot utiliza agentes inteligentes com acesso à busca em tempo real para gerar conteúdo estratégico sobre pecuária.</strong></p>
 
-2. Instalação de Dependências:
+📌 Observações
 
-%pip -q install google-genai
-!pip install -q google-adk
+Este projeto foi desenvolvido por <strong>Helena Marcomini</strong> como uma proposta de automação inteligente para o setor agropecuário. Todos os dados simulados são utilizados com fins de demonstração.
 
-3. Execução do Código:
+<p align="center"> <a href="https://github.com/HelenaMarcomini22"> <img src="https://img.shields.io/badge/GitHub-HelenaMarcomini22-30b36c?style=for-the-badge&logo=github&logoColor=white" alt="GitHub Helena"> </a> 
+<a href="https://www.linkedin.com/in/helena-marcomini-21707b145/"> <img src="https://img.shields.io/badge/LinkedIn-Helena%20Marcomini-0077b5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn Helena"> </a> 
+<a href="mailto:helenarfmarcomini@gmail.com"> <img src="https://img.shields.io/badge/Email-helenarfmarcomini@gmail.com-d14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email Helena"> </a> </p>
 
-O código fornecido no notebook (.ipynb) pode ser executado célula por célula. Cada agente é invocado através de funções dedicadas (agente_planejador, agente_busca_preco, etc.), demonstrando a interação e a saída de cada um.
-
-📚 Exemplo de Uso (Trechos do Código)
-
-# Exemplo de uso do Agente de Busca de Preços
-preco_arroba = agente_busca_preco()
-print("Preço da Arroba do Boi:", preco_arroba)
-
-# Exemplo de Resumo de Notícias
-noticias_pecuaria = ["Notícia A sobre alta nos custos de produção.", "Notícia B sobre novas tecnologias de pastagem."]
-resumos_noticias = agente_resumo_noticias(noticias_pecuaria)
-print("Resumos das Notícias:", resumos_noticias)
-
-# Exemplo de Geração de Post para LinkedIn
-plano_post = agente_planejador(topico="Impacto dos custos de produção na pecuária", lancamentos_buscados=resumos_noticias)
-post_linkedin = agente_curador_linkedin(plano_do_post=plano_post, resumo_noticia=resumos_noticias[0])
-print("Post para LinkedIn:", post_linkedin)
-
-🤝 Contribuições
-
-Sinta-se à vontade para explorar, testar e sugerir melhorias! Este projeto é um ponto de partida para muitas outras aplicações da IA no agronegócio.
-
-Licença
-
-Este projeto está sob a licença MIT License.
+<p align="center"> Feito com 💚 por <strong>Helena Marcomini</strong> • Desenvolvedora apaixonada por tecnologia</p>
