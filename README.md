@@ -1,8 +1,8 @@
 <h1 align="center"> 🐂 Chatbot Pecuário com GeminAI</h1>
 <p align="center"><strong>Automação inteligente para o agronegócio brasileiro<strong></p>
 <p align="center">
-<img src=".\assents\Bunner.png" alt="Banner do projeto" width="100%"></p>
-
+<img width="1536" height="1024" alt="Bunner" src="https://github.com/user-attachments/assets/45c99fba-f92f-4497-95f9-73057d413978" />
+  
 🔍 Funcionalidades
 
 ✅ Busca de preços da arroba do boi com fonte e data  
